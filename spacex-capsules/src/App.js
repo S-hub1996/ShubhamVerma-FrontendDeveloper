@@ -1,4 +1,5 @@
 import Banner from "./Components/Banner";
+import Data from "./Components/Data";
 import Footer from "./Components/Footer";
 import Nav from "./Components/Navbar";
 

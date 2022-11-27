@@ -30,6 +30,9 @@ const Data = () => {
            
     },[])
   return (
+
+
+    
     <>
 <Flex gap={2} justifyContent={'space-evenly'} m={4}>
 
