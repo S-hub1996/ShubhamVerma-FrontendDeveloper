@@ -48,7 +48,7 @@ export default function Banner() {
           </Text>
           <Flex justifyContent={"space-between"} gap="8">
             <Input
-              w={"30em"}
+              w={["20em","20em","30em"]}
               h={"3em"}
               rounded={"full"}
               color={"white"}
@@ -58,7 +58,7 @@ export default function Banner() {
             />
             <Button
               onClick={handleSearch}
-              w={"10em"}
+              w={["5em","7em","10em"]}
               h={"3em"}
               bg={"whiteAlpha.300"}
               rounded={"full"}

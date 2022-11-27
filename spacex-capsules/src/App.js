@@ -1,5 +1,5 @@
 import Banner from "./Components/Banner";
-import Card from "./Components/Card";
+import Footer from "./Components/Footer";
 import Nav from "./Components/Navbar";
 
 function App() {
@@ -7,7 +7,8 @@ function App() {
 <div>
   <Nav zIndex={999}/>
 <Banner/>
-<Card/>
+<Data/>
+<Footer/>
 </div>
   );
 }
