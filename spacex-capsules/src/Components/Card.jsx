@@ -38,7 +38,7 @@ export default function Card({item}) {
     <Center >
       <Box
       my={6} 
-      h={'35em'}
+      h={'40em'}
         maxW={'445px'}
         w={'full'}
         bg={useColorModeValue('white', 'gray.900')}
