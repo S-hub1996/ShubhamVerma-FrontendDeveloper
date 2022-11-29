@@ -49,7 +49,8 @@ const Data = () => {
 
 
     <>
-<Flex gap={2} justifyContent={'space-evenly'} m={4} >
+
+<SimpleGrid columns={[2,2,3,3,4,]}>
 
     <Select width={'15em'} onChange={(e)=>{setStatus(e.target.value)}}>
         <option>Filter by Status</option>
@@ -74,7 +75,8 @@ const Data = () => {
    
     </Select>
     <Button width={'10em'} bg={'gray.300'} onClick={handleFilter}>Filter Now</Button>
-</Flex>
+</SimpleGrid>
+
     <SimpleGrid columns={[1,1,2,2,3]}>
         {data?
             data?.map(item=>{

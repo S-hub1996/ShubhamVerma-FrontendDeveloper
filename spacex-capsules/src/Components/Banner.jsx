@@ -10,8 +10,13 @@ import {
 import { useState } from "react";
 import img from "../Assets/hero.webp";
 export default function Banner() {
+
   const [data, setData] = useState([]);
   const [input, setInput] = useState("");
+
+
+
+
 
   const handleSearch = () => {};
 
@@ -35,7 +40,7 @@ export default function Banner() {
             color={"white"}
             fontWeight={300}
             lineHeight={1.2}
-            fontSize={useBreakpointValue({ base: "2xl", md: "3xl" })}
+            fontSize={['md','lg','xl','2xl']}
           >
             “You want to wake up in the morning and think the future is going to
             be great - and that’s what being a spacefaring civilization is all
@@ -46,9 +51,9 @@ export default function Banner() {
             <br />
             -Elon Musk
           </Text>
-          <Flex justifyContent={"space-between"} gap="8">
+          <Flex justifyContent={"space-between"} gap={['0','2','4',"8"]}>
             <Input
-              w={["20em","20em","30em"]}
+              w={["10em","20em","30em"]}
               h={"3em"}
               rounded={"full"}
               color={"white"}
