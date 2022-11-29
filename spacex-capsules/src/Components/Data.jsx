@@ -1,13 +1,14 @@
-import { Button, Flex, Select, SimpleGrid } from '@chakra-ui/react';
+import { Button, Flex, Select, SimpleGrid, Text } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react'
 import Card from './Card';
+import CountDownTimer from './CountDownTimer';
 
 const Data = () => {
     const [data, setData] = useState([]);
     const [status, setStatus] = useState('');
     const [launched, setLaunched] = useState('');
     const [type, setType] = useState('');
-
+    const hoursMinSecs = {hours:24, minutes: 20, seconds: 40}
   async function handleFilter() {
         let headersList = {
             "Accept": "*/*",
@@ -49,8 +50,9 @@ const Data = () => {
 
 
     <>
-
-<SimpleGrid columns={[2,2,3,3,4,]}>
+    
+<CountDownTimer hoursMinSecs={hoursMinSecs}/>
+<SimpleGrid mx={'12'} columns={[2,2,3,3,4,]}>
 
     <Select width={'15em'} onChange={(e)=>{setStatus(e.target.value)}}>
         <option>Filter by Status</option>
