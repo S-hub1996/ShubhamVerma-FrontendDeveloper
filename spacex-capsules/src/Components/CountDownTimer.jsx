@@ -37,7 +37,7 @@ const CountDownTimer = ({hoursMinSecs}) => {
 
          <Text textAlign={'center'} fontSize={'4xl'} fontWeight={'thin'}>Next Launch in</Text>
            
-            <Heading fontSize={'9xl'} fontWeight={'semibold'}>{`${hrs.toString().padStart(2, '0')}:${mins
+            <Heading fontSize={['4xl','7xl','9xl']} fontWeight={'semibold'}>{`${hrs.toString().padStart(2, '0')}:${mins
             .toString()
             .padStart(2, '0')}:${secs.toString().padStart(2, '0')}`}</Heading> 
             </Stack>
