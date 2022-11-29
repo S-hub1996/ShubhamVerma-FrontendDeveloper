@@ -17,6 +17,7 @@ import {
   Center,
   Image,
 } from '@chakra-ui/react';
+import { Link as Rlink } from 'react-router-dom';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 
 
@@ -51,7 +52,24 @@ export default function Nav() {
                     src={'https://cdn.dribbble.com/users/610788/screenshots/5157282/media/916727c2ea5fdf615244f7b2402b9ebf.png?compress=1&resize=400x300&vertical=top'}
                   />
                 </MenuButton>
-                
+                <MenuList alignItems={'center'}>
+                  <br />
+                  <Center>
+                    <Avatar
+                      size={'2xl'}
+                      src={'https://cdn.dribbble.com/users/610788/screenshots/5157282/media/916727c2ea5fdf615244f7b2402b9ebf.png?compress=1&resize=400x300&vertical=top'}
+                    />
+                  </Center>
+                  <br />
+                  <Center>
+                    <p>BrainStrome Force</p>
+                  </Center>
+                  <br />
+                  <MenuDivider />
+                  <MenuItem>Your Servers</MenuItem>
+                  <MenuItem>Account Settings</MenuItem>
+                 <Rlink to='/'><MenuItem> Logout</MenuItem></Rlink> 
+                </MenuList>
               </Menu>
             </Stack>
           </Flex>
