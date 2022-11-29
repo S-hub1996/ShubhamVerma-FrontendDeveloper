@@ -30,14 +30,15 @@ e.preventDefault()
         baseURL:"https://reqres.in",
         data:{email:email,password:password}
     }).then(res=>setToken(res.data))
+    .catch(err=>alert('Login Failed'))
    
     if(token){
         alert('Login Successfully')
         navigate('/Home')
     }
-    else{
-        alert('Login Failed')
-    }
+    // else{
+    //     alert('Login Failed')
+    // }
 }
 
 
