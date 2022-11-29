@@ -60,6 +60,7 @@ export default function Banner() {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder={"Search Casules"}
+              _placeholder={{ opacity: 0.4, color: 'inherit' }}
             />
             <Button
               onClick={handleSearch}
@@ -72,6 +73,7 @@ export default function Banner() {
             >
               Search
             </Button>
+        
           </Flex>
         </Stack>
       </VStack>
